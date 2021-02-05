@@ -1,0 +1,85 @@
+footer{
+    display: flex;
+    background-color:  rgb(243, 151, 108);
+    flex-direction: column;
+    align-items: center;
+    .ensemble-social{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        p{
+            margin: 0;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            }
+            .bloc-social{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                margin-top: 10px;
+                .social{  
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 15px;
+                    margin: 10px 20px;
+                    color: white;
+                    font-size: 25px;
+                    height: 60px;
+                    width: 90px;
+                    i{
+                        color: white;
+                    }
+                }
+            }
+        }
+    .ensemble-annuaire{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 10px;
+        .annuaire{
+            margin: 20px;
+            h2{
+                color: white;
+                font-size: 15px;
+                font-weight: normal;
+            }
+            ul{
+                display: flex;
+                flex-direction: column;
+                li{
+                    font-size: 15px;
+                    margin: 10px;
+                    a{
+                       padding: 10px 10px 10px 0;
+                       color: black;
+                    }
+                }
+            }
+        }
+    }
+} 
+
+@media screen and (min-width: 770px){
+    footer{
+        .ensemble-social{
+            .bloc-social{
+                flex-direction: row;
+            }
+        }
+        .ensemble-annuaire{ 
+            max-width: 900px;
+            justify-content: space-between;
+            flex-direction: row;
+            .annuaire{
+                margin: 10px;
+            }
+        }
+    }
+}
